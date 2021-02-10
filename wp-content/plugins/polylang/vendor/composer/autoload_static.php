@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit90bd76dc7672e476bcd63c4a62ea320a
+class ComposerStaticInitb2e9581550b70057025a8e7128ef798f
 {
     public static $classMap = array (
         'PLL_AS3CF' => __DIR__ . '/../..' . '/integrations/wp-offload-media/as3cf.php',
@@ -126,7 +126,7 @@ class ComposerStaticInit90bd76dc7672e476bcd63c4a62ea320a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit90bd76dc7672e476bcd63c4a62ea320a::$classMap;
+            $loader->classMap = ComposerStaticInitb2e9581550b70057025a8e7128ef798f::$classMap;
 
         }, null, ClassLoader::class);
     }

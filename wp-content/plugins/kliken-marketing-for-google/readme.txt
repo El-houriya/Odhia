@@ -4,7 +4,7 @@ Tags: advertising, adwords, analytics, bing, google, leads, marketing, marketing
 Requires at least: 4.4
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later License
 URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -135,6 +135,9 @@ Google Ads & Marketing for WooCommerce is a contract free service. You can cance
 
 
 == Changelog ==
+
+= 1.0.7 =
+* Minor bug fixes.
 
 = 1.0.6 =
 * Minor bug fixes.

@@ -418,14 +418,14 @@ if ( ! function_exists( 'wvs_settings' ) ):
 								'id'      => 'defer_load_js',
 								'type'    => 'checkbox',
 								'title'   => esc_html__( 'Defer Load JS', 'woo-variation-swatches' ),
-								'desc'    => esc_html__( 'Defer Load JS for PageSpeed Score', 'woo-variation-swatches' ),
+								'desc'    => esc_html__( 'Defer Load JS for PageSpeed Score. If you use any caching plugin or your server have HTTP2 support you do not have to use it', 'woo-variation-swatches' ),
 								'default' => false
 							),
 							array(
 								'id'      => 'use_transient',
 								'type'    => 'checkbox',
 								'title'   => esc_html__( 'Use Transient Cache', 'woo-variation-swatches' ),
-								'desc'    => esc_html__( 'Use Transient Cache for PageSpeed Score', 'woo-variation-swatches' ),
+								'desc'    => esc_html__( 'Use Transient Cache for PageSpeed Score. If you use any caching plugin you do not have to use it', 'woo-variation-swatches' ),
 								'default' => false
 							)
 						)
@@ -447,7 +447,7 @@ if ( ! function_exists( 'wvs_settings' ) ):
 							array(
 								'pro'          => true,
 								'width'        => 'auto',
-								'screen_shot'  => woo_variation_swatches()->images_uri( 'red-style-preview.png' ),
+								'screen_shot'  => woo_variation_swatches()->wp_images_uri( 'red-style-preview.png' ),
 								'product_link' => woo_variation_swatches()->get_pro_link( 'style-tab' ),
 							),
 						)
@@ -469,7 +469,7 @@ if ( ! function_exists( 'wvs_settings' ) ):
 							array(
 								'pro'          => true,
 								'width'        => 'auto',
-								'screen_shot'  => woo_variation_swatches()->images_uri( 'red-archive-preview.png' ),
+								'screen_shot'  => woo_variation_swatches()->wp_images_uri( 'red-archive-preview.png' ),
 								'product_link' => woo_variation_swatches()->get_pro_link( 'archive-tab' ),
 							),
 						)
@@ -491,7 +491,7 @@ if ( ! function_exists( 'wvs_settings' ) ):
 							array(
 								'pro'          => true,
 								'width'        => 'auto',
-								'screen_shot'  => woo_variation_swatches()->images_uri( 'red-special-preview.png' ),
+								'screen_shot'  => woo_variation_swatches()->wp_images_uri( 'red-special-preview.png' ),
 								'product_link' => woo_variation_swatches()->get_pro_link( 'special-tab' ),
 							),
 						)
@@ -2087,3 +2087,58 @@ function wvs_upgrade_plugin( $plugin_slug ) {
 	return $upgraded;
 }
 
+// It's useful for plugin or theme documentation and for developer who want to know
+// how many add_action attached with a specific do_action hook, which file with line number.
+if ( ! function_exists( 'storepress_hook_info' ) ):
+
+	function storepress_hook_info( $hook_name ) {
+		global $wp_filter;
+
+		$docs     = array();
+		$template = "\t - %s Priority - %s.\n\tin file %s #%s\n\n";
+
+		echo '<pre>';
+		echo "\t# Hook Name \"" . $hook_name . "\"";
+		echo "\n\n";
+		if ( isset( $wp_filter[ $hook_name ] ) ) {
+			foreach ( $wp_filter[ $hook_name ] as $pri => $fn ) {
+
+				foreach ( $fn as $fnname => $fnargs ) {
+
+					if ( is_array( $fnargs['function'] ) ) {
+						$reflClass = new ReflectionClass( $fnargs['function'][0] );
+						$reflFunc  = $reflClass->getMethod( $fnargs['function'][1] );
+						$class     = $reflClass->getName();
+						$function  = $reflFunc->name;
+					} else {
+						$reflFunc  = new ReflectionFunction( $fnargs['function'] );
+						$class     = false;
+						$function  = $reflFunc->name;
+						$isClosure = (bool) $reflFunc->isClosure();
+					}
+
+					if ( $class ) {
+						$functionName = sprintf( 'Class "%s::%s"', $class, $function );
+					} else {
+						$functionName = ( $isClosure ) ? "Anonymous Function $function" : "Function \"$function\"";
+					}
+
+					printf( $template, $functionName, $pri, str_ireplace( ABSPATH, '', $reflFunc->getFileName() ), $reflFunc->getStartLine() );
+
+					$docs[] = array( $functionName, $pri );
+				}
+			}
+
+			echo "\tAction Hook Commenting\n\t----------------------\n\n";
+			echo "\t/**\n\t* " . $hook_name . " hook\n\t*\n";
+			foreach ( $docs as $doc ) {
+				echo "\t* @hooked " . $doc[0] . " - " . $doc[1] . "\n";
+			}
+			echo "\t*/";
+			echo "\n\n";
+			echo "\tdo_action( '" . $hook_name . "' );";
+
+		}
+		echo '</pre>';
+	}
+endif;

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.6.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-28 19:28:29+0000\n"
+"PO-Revision-Date: 2021-02-02 13:12:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2086,7 +2086,7 @@ msgstr "Dans chaque publication du flux, inclure"
 
 #: wp-admin/options-reading.php:144
 msgid "<strong>Warning:</strong> these pages should not be the same as your Privacy Policy page!"
-msgstr "<strong>Avertissement : </strong> ces pages ne doivent pas être les mêmes que votre page de politique de confidentialité !"
+msgstr "<strong>Avertissement : </strong> ces pages ne doivent pas être les mêmes que votre page de politique de confidentialité !"
 
 #: wp-admin/options-reading.php:52
 msgid "<a href=\"https://wordpress.org/support/article/settings-reading-screen/\">Documentation on Reading Settings</a>"
@@ -4626,7 +4626,7 @@ msgstr "Origine de la demande"
 
 #: wp-admin/erase-personal-data.php:66 wp-admin/export-personal-data.php:66
 msgid "Send Request"
-msgstr "Envoyer une demande"
+msgstr "Envoyer la demande de confirmation"
 
 #: wp-admin/erase-personal-data.php:64 wp-admin/export-personal-data.php:64
 msgid "Username or email address"
@@ -12521,7 +12521,7 @@ msgstr "Mise en forme"
 
 #: wp-admin/options-writing.php:16
 msgid "Writing Settings"
-msgstr "Options d’écriture"
+msgstr "Réglages d’écriture"
 
 #: wp-admin/options-reading.php:67
 msgid "Encoding for pages and feeds"
@@ -12559,7 +12559,7 @@ msgstr "Une <a href=\"%s\">page statique</a> (choisir ci-dessous)"
 
 #: wp-admin/options-reading.php:16
 msgid "Reading Settings"
-msgstr "Options de lecture"
+msgstr "Réglages de lecture"
 
 #: wp-admin/options-privacy.php:115
 msgid "Privacy Settings"

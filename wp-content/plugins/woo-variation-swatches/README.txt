@@ -1,12 +1,12 @@
 === Variation Swatches for WooCommerce ===
 Contributors: EmranAhmed, getwooplugins
 Tags: woocommerce variation swatches, woocommerce variation, woocommerce, variation swatches, woocommerce attributes, product attributes, product color, product size, variable product attributes, variation product swatches, color variation swatch, image variation swatch, printful color swatches
-Requires at least: 4.8
-Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: trunk
+Requires at least: 4.8
 WC requires at least: 4.5
+Tested up to: 5.6
 WC tested up to: 4.9
+Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -93,7 +93,7 @@ In the free WooCommerce attribute variation plugin, besides creating size, brand
 👉 Compatible with popular WooCommerce themes and plugins 
 👉 Frequently Updated And Secured Codebase 
 👉 Option to disable default plugin stylesheet for theme developer
-👉 Compatible With Popular WooCommerce Plugins Including <a href="http://bit.ly/woovs-org-item-page">WooCommerce Variation Image Gallery</a>  
+👉 Compatible With Popular WooCommerce Plugins
 
 ## 🏆 Users' Feedback For Variation Swatches For WooCommerce ##
 
@@ -283,6 +283,25 @@ In the free WooCommerce attribute variation plugin, besides creating size, brand
 * <a target="_blank" href="https://wordpress.org/plugins/polylang/">Polylang</a>
 * <a target="_blank" href="https://wordpress.org/plugins/loco-translate/">Loco Translate</a>
 
+= Compatible WooCommerce Plugin =
+
+<blockquote>
+
+<ul>
+<li><a target="_blank" href="http://bit.ly/woovs-org-item-page">Additional Variation Image Gallery For WooCommerce</a></li>
+</ul>
+<ul>
+<li><a target="_blank" href="http://bit.ly/swatches-link-to-duplicator-readme">Variation Duplicator For WoooCommerce</a></li>
+</ul>
+<ul>
+<li><a target="_blank" href="https://wordpress.org/plugins/woo-cart-redirect-to-checkout-page">Add to Cart Redirect for WooCommerce</a></li>
+</ul>
+<ul>
+<li><a target="_blank" href="https://wordpress.org/plugins/woo-2checkout">Payment Gateway – 2Checkout for WooCommerce</a></li>
+</ul>
+</blockquote>
+
+
 = Forum and Feature Request =
 
 <blockquote>
@@ -389,6 +408,14 @@ And your are ready to go.
 12. Global Variation Color Swatches Attribute List Preview
 
 == Changelog ==
+
+= 1.1.7 - 01-02-2021 =
+
+* Fix: WooCommerce Composite product issue
+
+= 1.1.6 - 27-01-2021 =
+
+* Update: Extended note on Performance Section
 
 = 1.1.5 - 13-01-2021 =
 

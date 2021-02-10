@@ -6,7 +6,7 @@
 
     <ul>
         <li>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-1.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-1.png' ) ?>"></div>
             <div class="tutorial-description-wrapper">
                 <h3>Color Swatches For Attribute Variation</h3>
                 <div class="tutorial-contents">
@@ -31,11 +31,11 @@
                     <a href="http://bit.ly/wvs-tuts-02" target="_blank" class="button button-docs">Documentation</a>
                 </div>
             </div>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-2.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-2.png' ) ?>"></div>
         </li>
 
         <li>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-3.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-3.png' ) ?>"></div>
             <div class="tutorial-description-wrapper">
                 <h3>Auto Convert All Variation Dropdown Into Button Swatches By Default</h3>
                 <div class="tutorial-contents">
@@ -58,12 +58,12 @@
                     <a href="http://j.mp/quickview-preview-inside-plugin" target="_blank" class="button button-live-demo">Live Video Preview</a>
                 </div>
             </div>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-4.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-4.png' ) ?>"></div>
         </li>
 
 
         <li>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-5.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-5.png' ) ?>"></div>
             <div class="tutorial-description-wrapper">
                 <h3>Text Tooltip</h3>
                 <div class="tutorial-contents">
@@ -89,14 +89,14 @@
                     <a href="http://bit.ly/wvs-tuts-06" target="_blank" class="button button-docs">Documentation</a>
                 </div>
             </div>
-            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-6.png' ) ?>"></div>
+            <div class="tutorial-image-wrapper"><img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-6.png' ) ?>"></div>
         </li>
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-14.gif' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-14.gif' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Auto Convert All Dropdowns Into Image Swatches If Variation Has Featured Image. (Most Popular & Time Saving Feature)</h3>
@@ -130,18 +130,18 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-7.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-7.jpg' ) ?>">
             </div>
         </li>
 
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-13.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-13.jpg' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Enable Dual Color Variation Swatches</h3>
@@ -176,18 +176,18 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-15.gif' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-15.gif' ) ?>">
             </div>
         </li>
 
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-16.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-16.jpg' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Individual Product Based Swatches Customization</h3>
@@ -222,18 +222,18 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-17.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-17.jpg' ) ?>">
             </div>
         </li>
 
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-18.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-18.jpg' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Generate Sharable Variation Link</h3>
@@ -268,18 +268,18 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-11.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-11.jpg' ) ?>">
             </div>
         </li>
 
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-10.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-10.jpg' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Display Swatch in Catalog / Archive Page</h3>
@@ -314,18 +314,18 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-19.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-19.jpg' ) ?>">
             </div>
         </li>
 
         <li>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-20.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-20.jpg' ) ?>">
             </div>
             <div class="tutorial-description-wrapper">
                 <h3>Highlight Desired Product Attribute</h3>
@@ -361,10 +361,33 @@
             </div>
             <div class="tutorial-image-wrapper">
 				<?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
-                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-varriation-swatches' ) ?></span></div>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
 				<?php endif; ?>
-                <img alt="" src="<?php echo woo_variation_swatches()->images_uri( 'tutorial-21.jpg' ) ?>">
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-21.jpg' ) ?>">
             </div>
+        </li>
+
+        <li>
+            <div class="tutorial-image-wrapper">
+                <?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
+                    <div class="ribbon"><span><?php esc_html_e( 'PRO', 'woo-variation-swatches' ) ?></span></div>
+                <?php endif; ?>
+                <img alt="" src="<?php echo woo_variation_swatches()->wp_images_uri( 'tutorial-22.jpg' ) ?>">
+            </div>
+            <div class="tutorial-description-wrapper">
+                <h3>WooCommerce Filter Widgets</h3>
+                <div class="tutorial-contents">
+                    WooCommerce Variation Swatches Converts Filter Products by Attribute Widget into color swatches. So, you can use the widget to enable swatches for filter dropdown.
+                </div>
+                <div class="tutorial-buttons">
+                    <a href="http://bit.ly/free-demo-tutorial-tab" target="_blank" class="button button-live-demo">Live Video Preview</a>
+                    <a href="http://bit.ly/widget-tutorial-tab-doc" target="_blank" class="button button-docs">Documentation</a>
+                    <?php if ( ! woo_variation_swatches()->is_pro_active() ): ?>
+                        <a href="<?php echo woo_variation_swatches()->get_pro_link( 'settings-tutorial' ) ?>" target="_blank" class="button button-pro">Upgrade to pro</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+
         </li>
     </ul>
 </div>

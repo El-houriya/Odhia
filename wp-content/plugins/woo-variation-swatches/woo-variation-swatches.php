@@ -4,11 +4,12 @@
  * Plugin URI: https://wordpress.org/plugins/woo-variation-swatches/
  * Description: Beautiful colors, images and buttons variation swatches for woocommerce product attributes. Requires WooCommerce 3.2+
  * Author: Emran Ahmed
- * Version: 1.1.5
+ * Version: 1.1.7
  * Domain Path: /languages
+ * Requires PHP: 5.6
  * Requires at least: 4.8
- * Tested up to: 5.6
  * WC requires at least: 4.5
+ * Tested up to: 5.6
  * WC tested up to: 4.9
  * Text Domain: woo-variation-swatches
  * Author URI: https://getwooplugins.com/
@@ -20,7 +21,7 @@ if ( ! class_exists( 'Woo_Variation_Swatches' ) ):
 
 	final class Woo_Variation_Swatches {
 
-		protected $_version = '1.1.5';
+		protected $_version = '1.1.7';
 
 		protected static $_instance = null;
 		private $_settings_api;
@@ -376,7 +377,7 @@ if ( ! class_exists( 'Woo_Variation_Swatches' ) ):
 				)
 			);
 
-
+			// On Free Version
 			if ( ! $this->is_pro_active() ) {
 				wp_deregister_script( 'wc-add-to-cart-variation' );
 				wp_register_script( 'wc-add-to-cart-variation', $this->get_wc_asset_url( 'assets/js/frontend/add-to-cart-variation' . $suffix . '.js' ),
@@ -725,6 +726,12 @@ if ( ! class_exists( 'Woo_Variation_Swatches' ) ):
 			$file = ltrim( $file, '/' );
 
 			return WVS_IMAGES_URI . $file;
+		}
+
+		public function wp_images_uri( $file ) {
+			$file = ltrim( $file, '/' );
+
+			return esc_url( sprintf( 'https://ps.w.org/woo-variation-swatches/assets/%s', $file ) );
 		}
 
 		public function assets_uri( $file ) {
